@@ -1,0 +1,77 @@
+
+//auto cell = Gtk::manage(new Gtk::CellRendererProgress);
+//int cols_count = m_TreeView.append_column("Some percentage", *cell);
+//auto pColumn = m_TreeView.get_column(cols_count - 1);
+//if(pColumn)
+//{
+//   pColumn->add_attribute(cell->property_value(), m_Columns.m_col_percentage);
+//}
+//int coll = tree_list_of_task->append_column_editable("Done", p_TreeModel->p_Columns.col_done);
+//std::cout << "m"<<coll<<"m\n";
+//auto cell = Gtk::manage(new Gtk::CellRendererToggle);
+//cell->set_activatable(true);
+//cell->set_active(true);
+//int cols_count = tree_list_of_task->append_column("Some", *cell);
+//auto ppColumn = tree_list_of_task->get_column(cols_count);
+// if (ppColumn) {
+//    std::cout << "niby signal";
+//ppColumn->property_clickable() = true;
+//ppColumn->set_clickable(true);
+//ppColumn->set_renderer(*cell, p_TreeModel->p_Columns.col_done);
+//ppColumn->add_attribute(cell->property_editing(), p_TreeModel->p_Columns.col_done);
+//   ppColumn->add_attribute(cell->property_active(), p_TreeModel->p_Columns.col_done);
+//cell->signal_toggled().CONNECT(foocolToggled2);
+//     ppColumn->signal_clicked().connect(sigc::mem_fun(*this, &GTK_tree_list_of_task::on_button_checkbox_clicked));
+// } else {
+//     std::cout << "nie znaleziono";
+// }
+//auto cell = Gtk::manage(new Gtk::CellRendererToggle);
+//int cols_count = tree_list_of_task->append_column("Some percentage", *cell);
+//auto pppColumn = tree_list_of_task->get_column(cols_count - 1);
+//if (pppColumn) {
+//   pppColumn->add_attribute(cell->property_sensitive(), p_TreeModel->p_Columns.col_done);
+//ppColumn->signal_clicked().connect( sigc::mem_fun(*this, &GTK_tree_list_of_task::foocolToggled));
+//}
+
+// checkbox_column.set_title("title");
+//checkbox_column.pack_start(fooRenderer);
+// checkbox_column.set_cell_data_func( fooRenderer, CB_FUNCTION( foocolData ) );
+//fooRenderer.property_sensitive() = true; // done by default
+//fooRenderer.signal_toggled().CONNECT( foocolToggled );
+
+//tree_list_of_task->append_column(checkbox_column);
+
+
+//auto cell = Gtk::manage(new Gtk::Entry);
+//   int cols_count = tree_list_of_task->append_column("Some percentage", *cell);
+// auto pColumn = tree_list_of_task->get_column(cols_count - 1);
+
+// pRenderer = Gtk::manage(new Gtk::CellRendererToggle);
+//tree_list_of_task->append_column("Some", *pRenderer);
+//pRenderer->set_activatable(true);
+//pRenderer->property_sensitive() = true;
+// pRenderer->signal_toggled().connect( sigc::mem_fun(*this, &GTK_tree_list_of_task::on_button_checkbox_clicked));
+// Gtk::TreeView::Column *pColumn = Gtk::manage(new Gtk::TreeView::Column("Icon Name"));
+//pColumn->set_cell_data_func( *pRenderer, CB_FUNCTION( foocolData ));
+
+// pRenderer->signal_toggled().CONNECT(foocolToggled);
+
+//pColumn->pack_start(*pRenderer, false);
+// pColumn->pack_start(m_columns.iconname);
+
+//tree_list_of_task->append_column(*pColumn);
+
+//checkbox_column.set_title("Done");
+// checkbox_column.set_clickable(true);
+// auto check = Gtk::manage(new Gtk::CheckButton);
+//  p_checkbox.signal_toggled();
+
+//checkbox_column.pack_start(*pRenderer);
+//  tree_list_of_task->append_column(checkbox_column);
+
+
+
+//tree_list_of_task->connect_property_changed("Done",
+//                                          p_TreeModel->p_Columns.col_done);
+//p_checkbox.property_editing();
+//p_checkbox.connect_property_changed(p_TreeModel->p_Columns.col_done);
